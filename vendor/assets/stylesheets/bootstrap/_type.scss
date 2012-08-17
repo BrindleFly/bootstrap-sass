@@ -136,6 +136,12 @@ dd {
   dd {
     margin-left: 130px;
   }
+  // Fixing issue with empty dd causing misalignment
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
 }
 
 // MISC
